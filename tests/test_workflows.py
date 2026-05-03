@@ -1959,7 +1959,7 @@ steps:
 
     def test_integration_auto_ignores_malformed_integration_json(self, project_dir):
         """Malformed integration.json falls back to 'copilot'."""
-        from specify_cli.workflows.engine import WorkflowEngine, WorkflowDefinition
+        from specify_cli.workflows.engine import WorkflowEngine
 
         (project_dir / ".specify" / "integration.json").write_text(
             "not valid json", encoding="utf-8"
@@ -2022,3 +2022,112 @@ steps:
         )
         engine = WorkflowEngine(project_dir)
         assert engine._load_project_integration() == "gemini"
+
+    def test_integration_auto_uses_default_integration_key(self, project_dir):
+        """Uses 'default_integration' key when 'integration' key is absent."""
+        from specify_cli.workflows.engine import WorkflowEngine
+
+        (project_dir / ".specify" / "integration.json").write_text(
+            '{"default_integration": "opencode"}', encoding="utf-8"
+        )
+        engine = WorkflowEngine(project_dir)
+        assert engine._load_project_integration() == "opencode"
+
+    def test_integration_auto_prefers_default_integration_over_integration(self, project_dir):
+        """'default_integration' takes priority over 'integration' in integration.json."""
+        from specify_cli.workflows.engine import WorkflowEngine
+
+        (project_dir / ".specify" / "integration.json").write_text(
+            '{"integration": "claude", "default_integration": "gemini"}',
+            encoding="utf-8",
+        )
+        engine = WorkflowEngine(project_dir)
+        assert engine._load_project_integration() == "gemini"
+
+    def test_integration_auto_explicit_with_enum(self, project_dir):
+        """Explicit --input integration=auto works even when workflow defines an enum."""
+        from specify_cli.workflows.engine import WorkflowEngine, WorkflowDefinition
+
+        (project_dir / ".specify" / "integration.json").write_text(
+            '{"integration": "opencode"}', encoding="utf-8"
+        )
+        engine = WorkflowEngine(project_dir)
+        yaml_str = """
+schema_version: "1.0"
+workflow:
+  id: "enum-test"
+  name: "Enum Test"
+  version: "1.0.0"
+inputs:
+  integration:
+    type: string
+    default: "auto"
+    enum: ["claude", "copilot", "gemini", "opencode"]
+steps:
+  - id: echo
+    type: shell
+    run: "echo {{ inputs.integration }}"
+"""
+        definition = WorkflowDefinition.from_string(yaml_str)
+        resolved = engine._resolve_inputs(definition, {"integration": "auto"})
+        assert resolved["integration"] == "opencode"
+
+    def test_step_context_default_integration_resolves_auto(self, project_dir):
+        """StepContext.default_integration resolves 'auto' to the project integration."""
+        from specify_cli.workflows.engine import WorkflowEngine, WorkflowDefinition
+
+        (project_dir / ".specify" / "integration.json").write_text(
+            '{"integration": "gemini"}', encoding="utf-8"
+        )
+        engine = WorkflowEngine(project_dir)
+        yaml_str = """
+schema_version: "1.0"
+workflow:
+  id: "ctx-test"
+  name: "Ctx Test"
+  version: "1.0.0"
+  integration: "auto"
+inputs:
+  spec:
+    type: string
+    required: true
+steps:
+  - id: echo
+    type: shell
+    run: "echo {{ inputs.spec }}"
+"""
+        definition = WorkflowDefinition.from_string(yaml_str)
+        assert definition.default_integration == "auto"
+        # Simulate what run() does for StepContext creation
+        default_integration = definition.default_integration
+        if default_integration == "auto":
+            default_integration = engine._load_project_integration()
+        assert default_integration == "gemini"
+
+    def test_step_context_default_integration_auto_fallback(self, project_dir):
+        """StepContext.default_integration falls back to 'copilot' when no config exists."""
+        from specify_cli.workflows.engine import WorkflowEngine, WorkflowDefinition
+
+        engine = WorkflowEngine(project_dir)
+        yaml_str = """
+schema_version: "1.0"
+workflow:
+  id: "ctx-fallback-test"
+  name: "Ctx Fallback Test"
+  version: "1.0.0"
+  integration: "auto"
+inputs:
+  spec:
+    type: string
+    required: true
+steps:
+  - id: echo
+    type: shell
+    run: "echo {{ inputs.spec }}"
+"""
+        definition = WorkflowDefinition.from_string(yaml_str)
+        assert definition.default_integration == "auto"
+        default_integration = definition.default_integration
+        if default_integration == "auto":
+            default_integration = engine._load_project_integration()
+        assert default_integration == "copilot"

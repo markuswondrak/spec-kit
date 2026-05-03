@@ -20,7 +20,10 @@ from typing import Any
 import yaml
 
 from .base import RunStatus, StepContext, StepResult, StepStatus
-from specify_cli.paths import INTEGRATION_JSON as _INTEGRATION_JSON
+from specify_cli.integration_state import (
+    INTEGRATION_JSON as _INTEGRATION_JSON,
+    default_integration_key as _default_integration_key,
+)
 from specify_cli.paths import INIT_OPTIONS_FILE as _INIT_OPTIONS_FILE
 
 
@@ -424,9 +427,15 @@ class WorkflowEngine:
         state.status = RunStatus.RUNNING
         state.save()
 
+        # Resolve "auto" sentinel in workflow-level default_integration so
+        # StepContext always carries a real integration key.
+        default_integration = definition.default_integration
+        if default_integration == "auto":
+            default_integration = self._load_project_integration()
+
         context = StepContext(
             inputs=resolved_inputs,
-            default_integration=definition.default_integration,
+            default_integration=default_integration,
             default_model=definition.default_model,
             default_options=definition.default_options,
             project_root=str(self.project_root),
@@ -713,18 +722,19 @@ class WorkflowEngine:
             if not isinstance(input_def, dict):
                 continue
             if name in provided:
-                resolved[name] = self._coerce_input(
-                    name, provided[name], input_def
-                )
+                value = provided[name]
+                # Resolve "auto" sentinel before coercion so enum validation
+                # sees the resolved integration key, not the literal "auto".
+                if name == "integration" and value == "auto":
+                    value = self._resolve_default(name, "auto")
+                resolved[name] = self._coerce_input(name, value, input_def)
             elif "default" in input_def:
                 resolved[name] = self._resolve_default(name, input_def["default"])
             elif input_def.get("required", False):
                 msg = f"Required input {name!r} not provided."
                 raise ValueError(msg)
-        # Also resolve "auto" sentinel when explicitly supplied by the caller
-        if resolved.get("integration") == "auto":
-            resolved["integration"] = self._resolve_default("integration", "auto")
         return resolved
+
 
     def _resolve_default(self, name: str, default: Any) -> Any:
         """Resolve special default sentinels against project state.
@@ -740,11 +750,12 @@ class WorkflowEngine:
     def _load_project_integration(self) -> str:
         """Read the active integration key from project metadata.
 
-        The primary source is ``.specify/integration.json``. If that file is
-        missing or invalid, fall back to ``.specify/init-options.json`` for
-        older projects or partially migrated state, checking ``integration``
-        first and then ``ai``. Returns ``"copilot"`` only when neither source
-        contains a valid non-empty integration key.
+        The primary source is ``.specify/integration.json``, using the same
+        ``default_integration`` -> ``integration`` key resolution as the rest
+        of the CLI. If that file is missing or invalid, fall back to
+        ``.specify/init-options.json`` for older projects, checking
+        ``integration`` first and then ``ai``. Returns ``"copilot"`` only
+        when neither source contains a valid non-empty integration key.
         """
 
         def _read_integration(path: Path, *keys: str) -> str | None:
@@ -764,12 +775,20 @@ class WorkflowEngine:
                         return value
             return None
 
-        integration = _read_integration(
-            self.project_root / _INTEGRATION_JSON, "integration"
-        )
-        if integration is not None:
-            return integration
+        # Primary: use canonical default_integration_key() which checks
+        # default_integration -> integration, matching the rest of the CLI.
+        int_path = self.project_root / _INTEGRATION_JSON
+        if int_path.is_file():
+            try:
+                data = json.loads(int_path.read_text(encoding="utf-8"))
+                if isinstance(data, dict):
+                    key = _default_integration_key(data)
+                    if key and key != "auto":
+                        return key
+            except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+                pass
 
+        # Fallback: legacy init-options.json
         integration = _read_integration(
             self.project_root / _INIT_OPTIONS_FILE,
             "integration",

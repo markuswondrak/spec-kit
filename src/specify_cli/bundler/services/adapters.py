@@ -11,6 +11,7 @@ These wire the bundler's injectable seams to the real environment:
 from __future__ import annotations
 
 import re
+import urllib.error
 from pathlib import Path
 from urllib.parse import ParseResult, urlparse
 from urllib.request import url2pathname
@@ -39,6 +40,11 @@ _BUILTIN_CATALOGS: dict[str, dict] = {
 }
 
 HTTP_TIMEOUT_SECONDS = 10
+_TRANSIENT_HTTP_STATUS_CODES = (408, 429)
+
+
+class _CatalogUnavailable(Exception):
+    """A catalog could not be fetched because its remote service is unavailable."""
 
 # Windows absolute paths like ``C:\catalog.json`` parse with a single-letter
 # ``scheme`` under urlparse; treat them as local files rather than URLs.
@@ -134,7 +140,10 @@ def make_catalog_fetcher(*, allow_network: bool = True):
         if scheme == "builtin":
             if url == "builtin://community":
                 if allow_network:
-                    return _http_get_json(source.id, COMMUNITY_CATALOG_URL)
+                    try:
+                        return _http_get_json(source.id, COMMUNITY_CATALOG_URL)
+                    except _CatalogUnavailable:
+                        return _load_packaged_community_catalog()
                 return _load_packaged_community_catalog()
             payload = _BUILTIN_CATALOGS.get(url)
             if payload is None:
@@ -178,7 +187,7 @@ def _http_get_json(source_id: str, url: str) -> dict:
     HTTPS/host guarantee from ``_validate_remote_url`` is preserved end to end
     rather than only on the initial URL.
     """
-    from ...authentication.http import open_url
+    from ...authentication.http import RedirectPolicyError, open_url
 
     def _validate_redirect(_old_url: str, new_url: str) -> None:
         _validate_remote_url(source_id, new_url)
@@ -199,6 +208,14 @@ def _http_get_json(source_id: str, url: str) -> dict:
             ).decode("utf-8")
     except BundlerError:
         raise
+    except RedirectPolicyError as exc:
+        raise BundlerError(f"Failed to fetch catalog from {url}: {exc}") from exc
+    except urllib.error.HTTPError as exc:
+        if exc.code in _TRANSIENT_HTTP_STATUS_CODES or exc.code >= 500:
+            raise _CatalogUnavailable() from exc
+        raise BundlerError(f"Failed to fetch catalog from {url}: {exc}") from exc
+    except (urllib.error.URLError, OSError) as exc:
+        raise _CatalogUnavailable() from exc
     except Exception as exc:  # noqa: BLE001
         raise BundlerError(f"Failed to fetch catalog from {url}: {exc}") from exc
     return loads_json(raw, origin=final_url)

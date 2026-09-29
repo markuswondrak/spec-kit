@@ -1,0 +1,84 @@
+diff --git a/src/specify_cli/workflows/_execution.py b/src/specify_cli/workflows/_execution.py
+index d75c4e41..8907a30c 100644
+--- a/src/specify_cli/workflows/_execution.py
++++ b/src/specify_cli/workflows/_execution.py
+@@ -451,8 +451,9 @@ class Execution:
+             )
+ 
+         if node["phase"] in {"ready", "blocked"}:
+-            with self.state._lock:
+-                self.state.current_step_id = name
++            if len(ancestry) == 1:
++                with self.state._lock:
++                    self.state.current_step_id = qualified
+             self.emit(
+                 "step_started",
+                 qualified,
+@@ -838,8 +839,15 @@ class Execution:
+                 if outcome in HALTING:
+                     return outcome, error, results
+             return "completed", None, results
++        def run_item_guarded(index):
++            try:
++                return run_item(index)
++            except BaseException:
++                halted.set()
++                raise
++
+         with ThreadPoolExecutor(max_workers=workers) as pool:
+-            futures = {i: pool.submit(run_item, i) for i in range(workers)}
++            futures = {i: pool.submit(run_item_guarded, i) for i in range(workers)}
+             for index in range(len(items)):
+                 try:
+                     outcome, error, value = futures.pop(index).result()
+@@ -854,5 +862,5 @@ class Execution:
+                     return outcome, error, results
+                 following = index + workers
+                 if following < len(items) and not halted.is_set():
+-                    futures[following] = pool.submit(run_item, following)
++                    futures[following] = pool.submit(run_item_guarded, following)
+         return "completed", None, results
+diff --git a/src/specify_cli/workflows/engine.py b/src/specify_cli/workflows/engine.py
+index d572c2c5..9b0a84e5 100644
+--- a/src/specify_cli/workflows/engine.py
++++ b/src/specify_cli/workflows/engine.py
+@@ -1240,7 +1240,7 @@ class WorkflowEngine:
+         rebind: bool = False,
+     ) -> None:
+         """Execute or resume the persisted tree (legacy indices adapt once)."""
+-        from ._execution import Execution, active_step, new_execution
++        from ._execution import Execution, new_execution
+         from copy import deepcopy
+ 
+         if state.execution is None:
+@@ -1249,14 +1249,7 @@ class WorkflowEngine:
+         context.steps = deepcopy(state.execution.get("initial", {}))
+         tree = state.execution["sequence"]
+         executor = Execution(self, state, registry, rebind=rebind)
+-        try:
+-            outcome, error = executor.run(
+-                tree, context, (state.workflow_id,), root=True
+-            )
+-        finally:
+-            active = active_step(state.execution)
+-            if active is not None:
+-                state.current_step_id = active[0][-1]
++        outcome, error = executor.run(tree, context, (state.workflow_id,), root=True)
+         state.status = RunStatus.RUNNING if outcome == "completed" else RunStatus(outcome)
+         state.error = error
+ 
+diff --git a/src/specify_cli/workflows/step/gate/__init__.py b/src/specify_cli/workflows/step/gate/__init__.py
+index 4297016d..5aac060c 100644
+--- a/src/specify_cli/workflows/step/gate/__init__.py
++++ b/src/specify_cli/workflows/step/gate/__init__.py
+@@ -40,10 +40,6 @@ class GateStep(StepBase):
+         message = config.get("message", "Review required.")
+         if isinstance(message, str) and "{{" in message:
+             message = evaluate_expression(message, context)
+-        # Step results are persisted as JSON. Keep the display value serializable
+-        # while _compose_prompt() independently accepts synthetic non-string data.
+-        if message is not None:
+-            message = str(message)
+ 
+         options = config.get("options", ["approve", "reject"])
+         on_reject = config.get("on_reject", "abort")

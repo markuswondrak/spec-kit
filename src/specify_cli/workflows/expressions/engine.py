@@ -9,7 +9,7 @@ them, not just ``_evaluate_template``.
 
 from __future__ import annotations
 
-from .engine_current import (
+from .engine_jinja2 import (
     _COMPARISON_OPERATORS,
     _WORD_OPERATORS,
     _collect_leaves,

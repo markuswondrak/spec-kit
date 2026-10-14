@@ -1,0 +1,4948 @@
+{
+  "corpus_size": 96,
+  "backends": {
+    "current": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "current",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "current",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ],
+    "lark": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "lark",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got True"
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got False"
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "lark",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ],
+    "lark-a2": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "lark-a2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "lark-a2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ],
+    "jinja2": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "jinja2",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: 'dict object' has no attribute 'run'; expected 1"
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got False, expected True"
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "TypeError: '>' not supported between instances of 'int' and 'str'; expected False"
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "TypeError: argument of type 'int' is not a container or iterable; expected False"
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got None, expected True"
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got True"
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got False"
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "jinja2",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ],
+    "pyparsing": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "pyparsing",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got True"
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "expected error, got False"
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "pyparsing",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ],
+    "liquid": [
+      {
+        "case_id": "req.var.integration",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.spec",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.idea",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.report",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.var.slug",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.idea-slug",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "req.interp.slug",
+        "backend": "liquid",
+        "requirement": "required",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.steps",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.hyphen",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.context-run-id-default",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.item",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.fan-in",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.index-negative",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "path.missing-intermediate",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.multi",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.adjacent",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.run-id",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.item",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "interp.close-brace-arg",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.missing | default('}}') %}x{% endif %}' 1:21\n  |\n1 | {% if inputs.missing | default('}}') %}x{% endif %}\n  |                      ^ expected end of expression, found '|'\n; expected 'Bob: }}'"
+      },
+      {
+        "case_id": "interp.open-brace-arg",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.missing | default('{{') %}x{% endif %}' 1:21\n  |\n1 | {% if inputs.missing | default('{{') %}x{% endif %}\n  |                      ^ expected end of expression, found '|'\n; expected 'Bob {{'"
+      },
+      {
+        "case_id": "interp.empty-block",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.eq",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ne",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.gt",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.lt",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.ge",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.le",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.numeric-string",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got False, expected True"
+      },
+      {
+        "case_id": "cmp.lexicographic",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cmp.incomparable",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: '<' and '>' are not supported between 'str' and 'int'\n  -> '{% if inputs.n > 'abc' %}x{% endif %}' 1:15\n  |\n1 | {% if inputs.n > 'abc' %}x{% endif %}\n  |                ^ '<' and '>' are not supported between 'str' and 'int'\n; expected False"
+      },
+      {
+        "case_id": "bool.and",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.or",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.not",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got False, expected True"
+      },
+      {
+        "case_id": "bool.precedence",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "bool.parens",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "mem.in-list",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found in\n  -> '{% if 'x' in inputs.items %}x{% endif %}' 1:10\n  |\n1 | {% if 'x' in inputs.items %}x{% endif %}\n  |           ^^ expected end of expression, found in\n; expected True"
+      },
+      {
+        "case_id": "mem.not-in",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found not\n  -> '{% if 'z' not in inputs.items %}x{% endif %}' 1:10\n  |\n1 | {% if 'z' not in inputs.items %}x{% endif %}\n  |           ^^^ expected end of expression, found not\n; expected True"
+      },
+      {
+        "case_id": "mem.in-quoted",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found in\n  -> '{% if 'cat' in 'cat and dog' %}x{% endif %}' 1:12\n  |\n1 | {% if 'cat' in 'cat and dog' %}x{% endif %}\n  |             ^^ expected end of expression, found in\n; expected True"
+      },
+      {
+        "case_id": "mem.non-iterable",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found in\n  -> '{% if inputs.tag in inputs.count %}x{% endif %}' 1:17\n  |\n1 | {% if inputs.tag in inputs.count %}x{% endif %}\n  |                  ^^ expected end of expression, found in\n; expected False"
+      },
+      {
+        "case_id": "lit.string",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.number",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-lower",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.bool-upper",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got None, expected True"
+      },
+      {
+        "case_id": "lit.null",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.list",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: missing or unexpected path segment\n  -> '{% if [1, 2, 3] %}x{% endif %}' 1:7\n  |\n1 | {% if [1, 2, 3] %}x{% endif %}\n  |        ^ missing or unexpected path segment\n; expected [1, 2, 3]"
+      },
+      {
+        "case_id": "lit.list-quoted-comma",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "diff",
+        "detail": "got None, expected ['a, b', 'c']"
+      },
+      {
+        "case_id": "lit.list-nested",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: missing or unexpected path segment\n  -> '{% if [[1, 2], 3] %}x{% endif %}' 1:8\n  |\n1 | {% if [[1, 2], 3] %}x{% endif %}\n  |         ^ missing or unexpected path segment\n; expected [[1, 2], 3]"
+      },
+      {
+        "case_id": "lit.list-trailing-comma",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: missing or unexpected path segment\n  -> '{% if [1, 2,] %}x{% endif %}' 1:7\n  |\n1 | {% if [1, 2,] %}x{% endif %}\n  |        ^ missing or unexpected path segment\n; expected [1, 2]"
+      },
+      {
+        "case_id": "lit.too-many-spaces",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "lit.no-spaces",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.default-none",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.missing | default('fb') %}x{% endif %}' 1:21\n  |\n1 | {% if inputs.missing | default('fb') %}x{% endif %}\n  |                      ^ expected end of expression, found '|'\n; expected 'fb'"
+      },
+      {
+        "case_id": "filter.default-empty",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected an identifier, found empty\n  -> '{% if inputs.empty | default('fb') %}x{% endif %}' 1:13\n  |\n1 | {% if inputs.empty | default('fb') %}x{% endif %}\n  |              ^^^^^ expected an identifier, found empty\n; expected 'fb'"
+      },
+      {
+        "case_id": "filter.default-list",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.missing | default([1, 2]) %}x{% endif %}' 1:21\n  |\n1 | {% if inputs.missing | default([1, 2]) %}x{% endif %}\n  |                      ^ expected end of expression, found '|'\n; expected [1, 2]"
+      },
+      {
+        "case_id": "filter.join",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.tags | join(', ') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.tags | join(', ') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected 'a, b, c'"
+      },
+      {
+        "case_id": "filter.map",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.rows | map('id') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.rows | map('id') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected ['a', 'b']"
+      },
+      {
+        "case_id": "filter.map-dot",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.rows | map('result.status') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.rows | map('result.status') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected ['ok', 'bad']"
+      },
+      {
+        "case_id": "filter.contains-str",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.text | contains('world') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.text | contains('world') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected True"
+      },
+      {
+        "case_id": "filter.contains-list",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.nums | contains(5) %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.nums | contains(5) %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected True"
+      },
+      {
+        "case_id": "filter.from-json-obj",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-array",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.from-json-number",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.to-json",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.upper",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.lower",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.split",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.csv | split(',') %}x{% endif %}' 1:17\n  |\n1 | {% if inputs.csv | split(',') %}x{% endif %}\n  |                  ^ expected end of expression, found '|'\n; expected ['a', 'b', 'c']"
+      },
+      {
+        "case_id": "filter.length",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "filter.chain",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.rows | map('name') | join(', ') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.rows | map('name') | join(', ') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected 'a, b'"
+      },
+      {
+        "case_id": "filter.arg-path",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.tags | join(inputs.sep) %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.tags | join(inputs.sep) %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected 'a-b'"
+      },
+      {
+        "case_id": "filter.pipe-in-arg",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.tags | join(' | ') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.tags | join(' | ') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected 'a | b'"
+      },
+      {
+        "case_id": "filter.contains-brace",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "raised",
+        "detail": "ValueError: expected end of expression, found '|'\n  -> '{% if inputs.text | contains('{{') %}x{% endif %}' 1:18\n  |\n1 | {% if inputs.text | contains('{{') %}x{% endif %}\n  |                   ^ expected end of expression, found '|'\n; expected True"
+      },
+      {
+        "case_id": "err.unknown-filter",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-unsupported-form",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-multi-arg",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.ambiguous-precedence",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.filter-after-not",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-invalid",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.from-json-non-string",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.upper-non-string",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.split-empty-sep",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.length-mapping",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.to-json-non-serializable",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "err.unbalanced-quote",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "expression",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.truthy",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.falsy-missing",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-false",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.stdout-true",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.comparison",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-empty",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.length-nonempty",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.whitespace-only",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.plain-string",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.empty-block",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      },
+      {
+        "case_id": "cond.choose",
+        "backend": "liquid",
+        "requirement": "compat",
+        "kind": "condition",
+        "status": "match",
+        "detail": ""
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "module": "engine_current.py",
+      "group": "engine",
+      "functions": 9,
+      "cognitive_sum": 125,
+      "cognitive_max": 70,
+      "cognitive_over_15": 2,
+      "cyclomatic_sum": 86,
+      "cyclomatic_max": 38,
+      "worst_rank": "E",
+      "lloc": 223,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "engine_lark.py",
+      "group": "engine",
+      "functions": 31,
+      "cognitive_sum": 87,
+      "cognitive_max": 36,
+      "cognitive_over_15": 2,
+      "cyclomatic_sum": 95,
+      "cyclomatic_max": 24,
+      "worst_rank": "D",
+      "lloc": 236,
+      "grammar_kind": "rules",
+      "grammar_items": 12,
+      "grammar_lines": 47
+    },
+    {
+      "module": "engine_lark_a2.py",
+      "group": "engine",
+      "functions": 31,
+      "cognitive_sum": 110,
+      "cognitive_max": 31,
+      "cognitive_over_15": 2,
+      "cyclomatic_sum": 113,
+      "cyclomatic_max": 20,
+      "worst_rank": "C",
+      "lloc": 287,
+      "grammar_kind": "rules",
+      "grammar_items": 17,
+      "grammar_lines": 37
+    },
+    {
+      "module": "engine_jinja2.py",
+      "group": "engine",
+      "functions": 12,
+      "cognitive_sum": 55,
+      "cognitive_max": 14,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 43,
+      "cyclomatic_max": 6,
+      "worst_rank": "B",
+      "lloc": 167,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "engine_pyparsing.py",
+      "group": "engine",
+      "functions": 14,
+      "cognitive_sum": 87,
+      "cognitive_max": 36,
+      "cognitive_over_15": 2,
+      "cyclomatic_sum": 74,
+      "cyclomatic_max": 24,
+      "worst_rank": "D",
+      "lloc": 247,
+      "grammar_kind": "nodes",
+      "grammar_items": 22,
+      "grammar_lines": 104
+    },
+    {
+      "module": "engine_liquid.py",
+      "group": "engine",
+      "functions": 14,
+      "cognitive_sum": 74,
+      "cognitive_max": 33,
+      "cognitive_over_15": 1,
+      "cyclomatic_sum": 42,
+      "cyclomatic_max": 8,
+      "worst_rank": "B",
+      "lloc": 195,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "__init__.py",
+      "group": "shared",
+      "functions": 0,
+      "cognitive_sum": 0,
+      "cognitive_max": 0,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 0,
+      "cyclomatic_max": 0,
+      "worst_rank": "A",
+      "lloc": 8,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "api.py",
+      "group": "shared",
+      "functions": 2,
+      "cognitive_sum": 6,
+      "cognitive_max": 5,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 6,
+      "cyclomatic_max": 4,
+      "worst_rank": "A",
+      "lloc": 21,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "diagnostics.py",
+      "group": "shared",
+      "functions": 10,
+      "cognitive_sum": 52,
+      "cognitive_max": 11,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 54,
+      "cyclomatic_max": 9,
+      "worst_rank": "B",
+      "lloc": 129,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "engine.py",
+      "group": "shared",
+      "functions": 0,
+      "cognitive_sum": 0,
+      "cognitive_max": 0,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 0,
+      "cyclomatic_max": 0,
+      "worst_rank": "A",
+      "lloc": 4,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "filters.py",
+      "group": "shared",
+      "functions": 11,
+      "cognitive_sum": 56,
+      "cognitive_max": 18,
+      "cognitive_over_15": 2,
+      "cyclomatic_sum": 42,
+      "cyclomatic_max": 8,
+      "worst_rank": "B",
+      "lloc": 127,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "namespace.py",
+      "group": "shared",
+      "functions": 3,
+      "cognitive_sum": 26,
+      "cognitive_max": 16,
+      "cognitive_over_15": 1,
+      "cyclomatic_sum": 20,
+      "cyclomatic_max": 10,
+      "worst_rank": "B",
+      "lloc": 50,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "operators.py",
+      "group": "shared",
+      "functions": 3,
+      "cognitive_sum": 14,
+      "cognitive_max": 7,
+      "cognitive_over_15": 0,
+      "cyclomatic_sum": 15,
+      "cyclomatic_max": 8,
+      "worst_rank": "B",
+      "lloc": 35,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    },
+    {
+      "module": "template.py",
+      "group": "shared",
+      "functions": 10,
+      "cognitive_sum": 117,
+      "cognitive_max": 19,
+      "cognitive_over_15": 1,
+      "cyclomatic_sum": 83,
+      "cyclomatic_max": 11,
+      "worst_rank": "C",
+      "lloc": 218,
+      "grammar_kind": null,
+      "grammar_items": null,
+      "grammar_lines": null
+    }
+  ],
+  "owned": [
+    {
+      "module": "engine_current.py",
+      "engine_sloc": 249,
+      "helper_sloc": 64,
+      "owned_sloc": 313,
+      "cognitive_sum": 166,
+      "cognitive_max": 70,
+      "helpers": [
+        "template.py:_split_top_level_commas",
+        "template.py:_is_single_list_literal",
+        "template.py:_is_wrapped_in_parens"
+      ]
+    },
+    {
+      "module": "engine_lark.py",
+      "engine_sloc": 295,
+      "helper_sloc": 0,
+      "owned_sloc": 295,
+      "cognitive_sum": 87,
+      "cognitive_max": 36,
+      "helpers": []
+    },
+    {
+      "module": "engine_lark_a2.py",
+      "engine_sloc": 334,
+      "helper_sloc": 0,
+      "owned_sloc": 334,
+      "cognitive_sum": 110,
+      "cognitive_max": 31,
+      "helpers": []
+    },
+    {
+      "module": "engine_jinja2.py",
+      "engine_sloc": 184,
+      "helper_sloc": 0,
+      "owned_sloc": 184,
+      "cognitive_sum": 55,
+      "cognitive_max": 14,
+      "helpers": []
+    },
+    {
+      "module": "engine_pyparsing.py",
+      "engine_sloc": 305,
+      "helper_sloc": 0,
+      "owned_sloc": 305,
+      "cognitive_sum": 87,
+      "cognitive_max": 36,
+      "helpers": []
+    },
+    {
+      "module": "engine_liquid.py",
+      "engine_sloc": 198,
+      "helper_sloc": 0,
+      "owned_sloc": 198,
+      "cognitive_sum": 74,
+      "cognitive_max": 33,
+      "helpers": []
+    }
+  ],
+  "runtime": [
+    {
+      "engine": "engine_current",
+      "per_expression_us": 117.19639721882736,
+      "first_call_ms": 0.0998319883365184,
+      "note": "",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_lark",
+      "per_expression_us": 3480.205392228931,
+      "first_call_ms": 2.008057024795562,
+      "note": "",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_lark_a2",
+      "per_expression_us": 193.00996778636343,
+      "first_call_ms": 0.24666497483849525,
+      "note": "",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_pyparsing",
+      "per_expression_us": 1114.2094961057107,
+      "first_call_ms": 1.0406369983684272,
+      "note": "",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_jinja2",
+      "per_expression_us": null,
+      "first_call_ms": null,
+      "note": "n/a: '{{ steps.run-tests.output.exit_code == 0 }}' raises ValueError",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_liquid",
+      "per_expression_us": null,
+      "first_call_ms": null,
+      "note": "n/a: \"{{ inputs.tags | join(', ') }}\" raises ValueError",
+      "corpus": ""
+    },
+    {
+      "engine": "engine_lark (LALR probe)",
+      "per_expression_us": 105.05389278275995,
+      "first_call_ms": 1.3541570224333555,
+      "note": "parser='lalr' + keyword priority .2; `not in inputs.a` rejected (as current)",
+      "corpus": "94/96 (diverging: err.ambiguous-precedence, err.filter-after-not)"
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: <repo>
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, anyio-4.15.1
+collected 11691 items
+
+tests/contract/test_bundled_extension_update_delivery.py ...........     [  0%]
+tests/contract/test_bundled_extension_versions.py .....................  [  0%]
+tests/contract/test_catalog_schema.py .................................. [  0%]
+.......................                                                  [  0%]
+tests/contract/test_extension_version_guard_script.py .................  [  0%]
+tests/contract/test_firstparty_bundle_catalog_consistency.py .....       [  0%]
+tests/contract/test_manifest_schema.py ................................. [  1%]
+.....                                                                    [  1%]
+tests/contract/test_wheel_bundled_presets.py ..                          [  1%]
+tests/contract/test_wheel_bundled_workflows.py ..                        [  1%]
+tests/contract/test_wheel_core_pack_scripts.py ..                        [  1%]
+tests/extensions/assess/test_assess_extension.py .........               [  1%]
+tests/extensions/bug/test_bug_extension.py ........                      [  1%]
+tests/extensions/bug/test_bug_hooks.py ...................               [  1%]
+tests/extensions/git/test_git_extension.py ..........ss................. [  1%]
+.........sssssssssssssssssssssss......................ssssssssssssssssss [  2%]
+ss..........sss                                                          [  2%]
+tests/extensions/git/test_git_extension_python_parity.py ..ss...ss...... [  2%]
+.............................................                            [  3%]
+tests/extensions/github/test_github_extension.py ....................... [  3%]
+...............................................................sssss.... [  3%]
+..............s..s..s..s..s..s..s..s..s..s..s..s..s..s..s..s..s..s..s..s [  4%]
+..s..s..s..s..s..s..s..s..s..s..s.                                       [  4%]
+tests/extensions/github/test_taskstoissues_deprecation.py .......        [  4%]
+tests/extensions/test_agent_context_cli_free.py ...................      [  5%]
+tests/extensions/test_extension_agent_context.py ...............ssssss.. [  5%]
+.......s....sss..                                                        [  5%]
+tests/extensions/test_update_agent_context_feature_json.py ......sss     [  5%]
+tests/extensions/test_update_agent_context_python_parity.py ............ [  5%]
+.......s.s....sss                                                        [  5%]
+tests/integration/test_preset_update_workflow.py ....                    [  5%]
+tests/integrations/test_base.py ........................................ [  6%]
+.............................................                            [  6%]
+tests/integrations/test_cli.py ......................................... [  6%]
+.....................................                                    [  7%]
+tests/integrations/test_extra_args.py .................................. [  7%]
+.....                                                                    [  7%]
+tests/integrations/test_home_isolation.py .                              [  7%]
+tests/integrations/test_integration_agy.py ............................. [  7%]
+......................................                                   [  8%]
+tests/integrations/test_integration_alquimia.py ........................ [  8%]
+....................                                                     [  8%]
+tests/integrations/test_integration_amp.py .......................       [  8%]
+tests/integrations/test_integration_auggie.py ..................         [  8%]
+tests/integrations/test_integration_bob.py ............................. [  9%]
+.......................................                                  [  9%]
+tests/integrations/test_integration_claude.py .......................... [  9%]
+....................                                                     [  9%]
+tests/integrations/test_integration_cline.py ........................... [ 10%]
+........                                                                 [ 10%]
+tests/integrations/test_integration_codebuddy.py ...................     [ 10%]
+tests/integrations/test_integration_codex.py ........................... [ 10%]
+.............                                                            [ 10%]
+tests/integrations/test_integration_command_code.py .................... [ 10%]
+...........                                                              [ 10%]
+tests/integrations/test_integration_copilot.py ......................... [ 11%]
+........................................                                 [ 11%]
+tests/integrations/test_integration_cursor_agent.py .................... [ 11%]
+.......................                                                  [ 11%]
+tests/integrations/test_integration_devin.py ........................... [ 12%]
+.......                                                                  [ 12%]
+tests/integrations/test_integration_docker_agent.py .................... [ 12%]
+................................                                         [ 12%]
+tests/integrations/test_integration_droid.py ........................... [ 12%]
+..s...................                                                   [ 12%]
+tests/integrations/test_integration_dsh.py ............................. [ 13%]
+s.............                                                           [ 13%]
+tests/integrations/test_integration_firebender.py ..................     [ 13%]
+tests/integrations/test_integration_forge.py ........................... [ 13%]
+.......                                                                  [ 13%]
+tests/integrations/test_integration_gemini.py .......................... [ 13%]
+......                                                                   [ 14%]
+tests/integrations/test_integration_generic.py ......................... [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 15%]
+........................................................................ [ 16%]
+                                                                         [ 16%]
+tests/integrations/test_integration_goose.py ........................... [ 16%]
+...........                                                              [ 16%]
+tests/integrations/test_integration_grok.py ............................ [ 16%]
+.s.......                                                                [ 16%]
+tests/integrations/test_integration_hermes.py .......................... [ 16%]
+............                                                             [ 17%]
+tests/integrations/test_integration_junie.py ........................... [ 17%]
+.....                                                                    [ 17%]
+tests/integrations/test_integration_kilocode.py ......................   [ 17%]
+tests/integrations/test_integration_kimi.py ............................ [ 17%]
+...........................                                              [ 17%]
+tests/integrations/test_integration_kiro_cli.py ........................ [ 18%]
+                                                                         [ 18%]
+tests/integrations/test_integration_lingma.py .......................... [ 18%]
+.....                                                                    [ 18%]
+tests/integrations/test_integration_mcode.py ........................... [ 18%]
+..............                                                           [ 18%]
+tests/integrations/test_integration_muse.py ............................ [ 19%]
+.........                                                                [ 19%]
+tests/integrations/test_integration_omp.py ....................          [ 19%]
+tests/integrations/test_integration_opencode.py ........................ [ 19%]
+....                                                                     [ 19%]
+tests/integrations/test_integration_pi.py ...................            [ 19%]
+tests/integrations/test_integration_qodercli.py ........................ [ 19%]
+.....s..                                                                 [ 19%]
+tests/integrations/test_integration_qwen.py ..................           [ 20%]
+tests/integrations/test_integration_rovodev.py ................          [ 20%]
+tests/integrations/test_integration_shai.py .....................        [ 20%]
+tests/integrations/test_integration_state.py .......                     [ 20%]
+tests/integrations/test_integration_tabnine.py ......................... [ 20%]
+.......                                                                  [ 20%]
+tests/integrations/test_integration_trae.py ............................ [ 21%]
+..                                                                       [ 21%]
+tests/integrations/test_integration_vibe.py ............................ [ 21%]
+...............................                                          [ 21%]
+tests/integrations/test_integration_zcode.py ........................... [ 21%]
+....                                                                     [ 21%]
+tests/integrations/test_integration_zed.py ............................. [ 22%]
+s........................                                                [ 22%]
+tests/integrations/test_manifest.py .................................... [ 22%]
+................................................                         [ 22%]
+tests/integrations/test_registry.py .................................... [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+......................................................                   [ 30%]
+tests/integrations/test_skill_frontmatter_quoting.py ...........         [ 30%]
+tests/specify_cli/artifacts/test_catalog.py ............................ [ 30%]
+........................................................................ [ 31%]
+............                                                             [ 31%]
+tests/specify_cli/artifacts/test_catalog_parity.py ....                  [ 31%]
+tests/specify_cli/artifacts/test_command_info.py .................       [ 31%]
+tests/specify_cli/artifacts/test_command_list.py ...........             [ 31%]
+tests/specify_cli/artifacts/test_command_lookup.py .............         [ 31%]
+tests/specify_cli/artifacts/test_mcp_info.py ........................... [ 32%]
+.........................................                                [ 32%]
+tests/specify_cli/artifacts/test_mcp_list.py ........................... [ 32%]
+.............                                                            [ 32%]
+tests/specify_cli/artifacts/test_operation_info.py ..................... [ 33%]
+................................                                         [ 33%]
+tests/specify_cli/artifacts/test_operation_list.py ..................... [ 33%]
+..                                                                       [ 33%]
+tests/specify_cli/artifacts/test_registration.py .                       [ 33%]
+tests/specify_cli/authentication/test_authentication.py ................ [ 33%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+................................                                         [ 35%]
+tests/specify_cli/authentication/test_github_http.py ................... [ 35%]
+........................................................................ [ 35%]
+.........                                                                [ 36%]
+tests/specify_cli/bundles/catalog/test_command_add.py .                  [ 36%]
+tests/specify_cli/bundles/catalog/test_command_list.py .                 [ 36%]
+tests/specify_cli/bundles/catalog/test_command_remove.py .               [ 36%]
+tests/specify_cli/bundles/test_adapters.py ............................. [ 36%]
+................                                                         [ 36%]
+tests/specify_cli/bundles/test_bundles.py .                              [ 36%]
+tests/specify_cli/bundles/test_catalog_config.py ....................... [ 36%]
+..................                                                       [ 36%]
+tests/specify_cli/bundles/test_catalog_stack.py ...............          [ 36%]
+tests/specify_cli/bundles/test_catalog_versions.py ..................... [ 37%]
+........................................................................ [ 37%]
+...........                                                              [ 37%]
+tests/specify_cli/bundles/test_command_add.py ....                       [ 37%]
+tests/specify_cli/bundles/test_command_build.py ..                       [ 37%]
+tests/specify_cli/bundles/test_command_info.py ......................    [ 38%]
+tests/specify_cli/bundles/test_command_init.py .                         [ 38%]
+tests/specify_cli/bundles/test_command_install.py ...................... [ 38%]
+.............                                                            [ 38%]
+tests/specify_cli/bundles/test_command_install_version.py .............. [ 38%]
+.......                                                                  [ 38%]
+tests/specify_cli/bundles/test_command_list.py ........                  [ 38%]
+tests/specify_cli/bundles/test_command_remove.py .                       [ 38%]
+tests/specify_cli/bundles/test_command_search.py ....                    [ 38%]
+tests/specify_cli/bundles/test_command_update.py ..                      [ 38%]
+tests/specify_cli/bundles/test_command_validate.py ...................   [ 38%]
+tests/specify_cli/bundles/test_commands.py ......                        [ 38%]
+tests/specify_cli/bundles/test_conflict.py ........                      [ 38%]
+tests/specify_cli/bundles/test_installer.py ............................ [ 39%]
+................................                                         [ 39%]
+tests/specify_cli/bundles/test_offline.py ..........                     [ 39%]
+tests/specify_cli/bundles/test_packager.py ................              [ 39%]
+tests/specify_cli/bundles/test_primitives.py ........................... [ 39%]
+................................                                         [ 40%]
+tests/specify_cli/bundles/test_records.py .............................. [ 40%]
+.........                                                                [ 40%]
+tests/specify_cli/bundles/test_references.py ........................... [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 42%]
+.                                                                        [ 42%]
+tests/specify_cli/bundles/test_resolver.py ............                  [ 42%]
+tests/specify_cli/bundles/test_security_paths.py ....................... [ 42%]
+...................                                                      [ 42%]
+tests/specify_cli/bundles/test_sources.py .............................. [ 42%]
+..                                                                       [ 42%]
+tests/specify_cli/bundles/test_validator.py ...                          [ 42%]
+tests/specify_cli/bundles/test_versioning.py ........................... [ 43%]
+...............                                                          [ 43%]
+tests/specify_cli/bundles/test_yamlio.py .....                           [ 43%]
+tests/specify_cli/events/test_command_run.py ......                      [ 43%]
+tests/specify_cli/events/test_events.py ................................ [ 43%]
+........................................................................ [ 44%]
+...................................                                      [ 44%]
+tests/specify_cli/extensions/catalog/test_command_add.py .......         [ 44%]
+tests/specify_cli/extensions/catalog/test_command_list.py ...            [ 44%]
+tests/specify_cli/extensions/catalog/test_command_remove.py ..           [ 44%]
+tests/specify_cli/extensions/test_catalog_versions.py .................. [ 44%]
+...............                                                          [ 44%]
+tests/specify_cli/extensions/test_command_add.py ....................... [ 45%]
+..........                                                               [ 45%]
+tests/specify_cli/extensions/test_command_add_path_traversal.py ........ [ 45%]
+.......                                                                  [ 45%]
+tests/specify_cli/extensions/test_command_disable.py .                   [ 45%]
+tests/specify_cli/extensions/test_command_enable.py .                    [ 45%]
+tests/specify_cli/extensions/test_command_info.py ........               [ 45%]
+tests/specify_cli/extensions/test_command_list.py ...                    [ 45%]
+tests/specify_cli/extensions/test_command_remove.py ...                  [ 45%]
+tests/specify_cli/extensions/test_command_search.py ...                  [ 45%]
+tests/specify_cli/extensions/test_command_set_priority.py ......         [ 45%]
+tests/specify_cli/extensions/test_command_update.py .................... [ 45%]
+                                                                         [ 45%]
+tests/specify_cli/extensions/test_command_update_artifacts.py ...        [ 45%]
+tests/specify_cli/extensions/test_command_update_discovery.py ...        [ 45%]
+tests/specify_cli/extensions/test_command_update_transaction.py ........ [ 45%]
+............................                                             [ 45%]
+tests/specify_cli/integrations/catalog/test_command_add.py ....          [ 45%]
+tests/specify_cli/integrations/catalog/test_command_list.py .....        [ 46%]
+tests/specify_cli/integrations/catalog/test_command_remove.py ...        [ 46%]
+tests/specify_cli/integrations/test_catalog.py ......................... [ 46%]
+........................................................................ [ 46%]
+...........................                                              [ 47%]
+tests/specify_cli/integrations/test_catalog_versions.py ................ [ 47%]
+............                                                             [ 47%]
+tests/specify_cli/integrations/test_command_info.py ............         [ 47%]
+tests/specify_cli/integrations/test_command_install.py ................. [ 47%]
+.........                                                                [ 47%]
+tests/specify_cli/integrations/test_command_list.py .......              [ 47%]
+tests/specify_cli/integrations/test_command_scaffold.py ....             [ 47%]
+tests/specify_cli/integrations/test_command_scaffold_generation.py ..... [ 47%]
+.......                                                                  [ 47%]
+tests/specify_cli/integrations/test_command_search.py ............       [ 47%]
+tests/specify_cli/integrations/test_command_status.py .................. [ 48%]
+........................                                                 [ 48%]
+tests/specify_cli/integrations/test_command_switch.py .................. [ 48%]
+........                                                                 [ 48%]
+tests/specify_cli/integrations/test_command_uninstall.py ..........      [ 48%]
+tests/specify_cli/integrations/test_command_upgrade.py ................. [ 48%]
+.......................                                                  [ 48%]
+tests/specify_cli/integrations/test_command_upgrade_layout.py .          [ 49%]
+tests/specify_cli/integrations/test_command_use.py ........              [ 49%]
+tests/specify_cli/integrations/test_installed_adapters.py .............. [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+......                                                                   [ 54%]
+tests/specify_cli/integrations/test_lifecycle.py ......                  [ 54%]
+tests/specify_cli/integrations/test_registration.py .............        [ 54%]
+tests/specify_cli/mcp_server/test_catalog.py ...                         [ 54%]
+tests/specify_cli/mcp_server/test_executor.py ...............            [ 55%]
+tests/specify_cli/mcp_server/test_server.py .....                        [ 55%]
+tests/specify_cli/mcp_server/test_stdio.py .                             [ 55%]
+tests/specify_cli/presets/catalog/test_command_add.py ....               [ 55%]
+tests/specify_cli/presets/catalog/test_command_list.py .                 [ 55%]
+tests/specify_cli/presets/catalog/test_command_remove.py ..              [ 55%]
+tests/specify_cli/presets/test_catalog.py .............................. [ 55%]
+........................................................................ [ 56%]
+........                                                                 [ 56%]
+tests/specify_cli/presets/test_catalog_versions.py ..................... [ 56%]
+..............................................                           [ 56%]
+tests/specify_cli/presets/test_command_add.py .......................... [ 56%]
+........                                                                 [ 57%]
+tests/specify_cli/presets/test_command_disable.py ....                   [ 57%]
+tests/specify_cli/presets/test_command_enable.py ......                  [ 57%]
+tests/specify_cli/presets/test_command_info.py ......                    [ 57%]
+tests/specify_cli/presets/test_command_list.py ..                        [ 57%]
+tests/specify_cli/presets/test_command_remove.py .                       [ 57%]
+tests/specify_cli/presets/test_command_resolve.py ........               [ 57%]
+tests/specify_cli/presets/test_command_search.py ......                  [ 57%]
+tests/specify_cli/presets/test_command_set_priority.py ......            [ 57%]
+tests/specify_cli/presets/test_command_update.py ..........s.            [ 57%]
+tests/specify_cli/presets/test_domain_exports.py ............            [ 57%]
+tests/specify_cli/presets/test_manager.py .............................. [ 57%]
+.....................................................                    [ 58%]
+tests/specify_cli/presets/test_manager_commands.py ..................... [ 58%]
+..........................................                               [ 58%]
+tests/specify_cli/presets/test_manager_skills.py ....................... [ 59%]
+............................................                             [ 59%]
+tests/specify_cli/presets/test_manifest.py ............................. [ 59%]
+........................................................................ [ 60%]
+............                                                             [ 60%]
+tests/specify_cli/presets/test_registration.py ...                       [ 60%]
+tests/specify_cli/presets/test_registry.py ........................      [ 60%]
+tests/specify_cli/presets/test_resolver.py ............................. [ 60%]
+.............................................                            [ 61%]
+tests/specify_cli/selfs/test_command_check.py .....................      [ 61%]
+tests/specify_cli/selfs/test_command_upgrade.py ...................      [ 61%]
+tests/specify_cli/test_agent_config.py .........                         [ 61%]
+tests/specify_cli/test_check_tool.py ............                        [ 61%]
+tests/specify_cli/test_command_check.py ..                               [ 61%]
+tests/specify_cli/test_command_init.py ...............                   [ 61%]
+tests/specify_cli/test_command_mcp.py ...                                [ 61%]
+tests/specify_cli/test_command_version.py ..........                     [ 61%]
+tests/specify_cli/test_mcp_version.py ............                       [ 62%]
+tests/specify_cli/test_operation_version.py .......                      [ 62%]
+tests/specify_cli/test_root_version_callback.py ...                      [ 62%]
+tests/specify_cli/test_version_detection.py ............................ [ 62%]
+...........s........                                                     [ 62%]
+tests/specify_cli/test_version_execution.py ......................       [ 62%]
+tests/specify_cli/test_version_guidance.py ........                      [ 62%]
+tests/specify_cli/test_version_imports.py ...                            [ 62%]
+tests/specify_cli/test_version_release.py .........................      [ 63%]
+tests/specify_cli/test_version_verification.py .......................   [ 63%]
+tests/specify_cli/workflows/catalog/test_command_add.py ..               [ 63%]
+tests/specify_cli/workflows/catalog/test_command_list.py .               [ 63%]
+tests/specify_cli/workflows/catalog/test_command_remove.py ...           [ 63%]
+tests/specify_cli/workflows/overlay/test_command_add.py ................ [ 63%]
+...                                                                      [ 63%]
+tests/specify_cli/workflows/overlay/test_command_disable.py ...          [ 63%]
+tests/specify_cli/workflows/overlay/test_command_enable.py .             [ 63%]
+tests/specify_cli/workflows/overlay/test_command_list.py .........       [ 63%]
+tests/specify_cli/workflows/overlay/test_command_remove.py ....          [ 63%]
+tests/specify_cli/workflows/overlay/test_command_set_priority.py ......  [ 63%]
+tests/specify_cli/workflows/step/catalog/test_command_add.py ..          [ 63%]
+tests/specify_cli/workflows/step/catalog/test_command_list.py .          [ 63%]
+tests/specify_cli/workflows/step/catalog/test_command_remove.py ...      [ 63%]
+tests/specify_cli/workflows/step/catalog/test_registry.py .              [ 63%]
+tests/specify_cli/workflows/step/test_catalog_versions.py .............. [ 63%]
+.......                                                                  [ 63%]
+tests/specify_cli/workflows/step/test_command_add.py ................... [ 64%]
+.....................................................                    [ 64%]
+tests/specify_cli/workflows/step/test_command_info.py .....              [ 64%]
+tests/specify_cli/workflows/step/test_command_list.py .                  [ 64%]
+tests/specify_cli/workflows/step/test_command_remove.py .............    [ 64%]
+tests/specify_cli/workflows/step/test_command_search.py .                [ 64%]
+tests/specify_cli/workflows/step/test_installer.py ..................... [ 64%]
+........................................................................ [ 65%]
+.........                                                                [ 65%]
+tests/specify_cli/workflows/test_catalog_versions.py ................... [ 65%]
+...........................                                              [ 65%]
+tests/specify_cli/workflows/test_command_add.py ........................ [ 66%]
+........................................................................ [ 66%]
+.......................                                                  [ 67%]
+tests/specify_cli/workflows/test_command_disable.py ...s...              [ 67%]
+tests/specify_cli/workflows/test_command_enable.py ......                [ 67%]
+tests/specify_cli/workflows/test_command_info.py ....                    [ 67%]
+tests/specify_cli/workflows/test_command_list.py ....                    [ 67%]
+tests/specify_cli/workflows/test_command_remove.py ............          [ 67%]
+tests/specify_cli/workflows/test_command_resolve.py ......               [ 67%]
+tests/specify_cli/workflows/test_command_resume.py ..................... [ 67%]
+............                                                             [ 67%]
+tests/specify_cli/workflows/test_command_resume_state.py ..              [ 67%]
+tests/specify_cli/workflows/test_command_run.py ........................ [ 67%]
+......................                                                   [ 68%]
+tests/specify_cli/workflows/test_command_run_ownership.py .              [ 68%]
+tests/specify_cli/workflows/test_command_search.py ...                   [ 68%]
+tests/specify_cli/workflows/test_command_status.py ..................    [ 68%]
+tests/specify_cli/workflows/test_command_update.py ...................   [ 68%]
+tests/specify_cli/workflows/test_custom_steps.py ..                      [ 68%]
+tests/test_agent_config_consistency.py ...............................   [ 68%]
+tests/test_branch_numbering.py .                                         [ 68%]
+tests/test_bug_fix_workflow.py ....                                      [ 68%]
+tests/test_catalog_trust_docs.py ....                                    [ 68%]
+tests/test_check_prerequisites_paths_only.py .........sssssssssss        [ 68%]
+tests/test_check_prerequisites_python_parity.py .........s....ssss...... [ 69%]
+..........s                                                              [ 69%]
+tests/test_clarify_stage_gate.py .                                       [ 69%]
+tests/test_command_template_hooks.py .....................               [ 69%]
+tests/test_command_template_py_scripts.py .......................s...... [ 69%]
+....                                                                     [ 69%]
+tests/test_community_preset_validation.py .............................. [ 69%]
+.....................                                                    [ 70%]
+tests/test_console_imports.py .......                                    [ 70%]
+tests/test_constitution_template_sync_report.py .                        [ 70%]
+tests/test_converge_template_scaffold.py ..                              [ 70%]
+tests/test_create_new_feature_python_parity.py ..s..s..s..s..s..s..s..s. [ 70%]
+.s..s..s..s......s..s..s..s..................sss....ssssss.............s [ 71%]
+sssssssssss.ss..sssssssss.....ssssssssss..s..s..s.                       [ 71%]
+tests/test_download_security.py ........................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+.........                                                                [ 73%]
+tests/test_extension_registration.py ......................              [ 73%]
+tests/test_extension_skills.py ......................................... [ 73%]
+........................................................................ [ 74%]
+..............                                                           [ 74%]
+tests/test_extensions.py ............................................... [ 74%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+.........................................................                [ 78%]
+tests/test_github_workflows.py ......................................... [ 78%]
+........................................................................ [ 79%]
+.......................................                                  [ 79%]
+tests/test_init_dir.py ..............ssssssssss....sss                   [ 79%]
+tests/test_init_dir_cli.py ............                                  [ 80%]
+tests/test_installed_info_json.py ...............                        [ 80%]
+tests/test_installed_list_json.py ................................       [ 80%]
+tests/test_live_transient_windows.py ....                                [ 80%]
+tests/test_merge.py .............                                        [ 80%]
+tests/test_post_process.py ............                                  [ 80%]
+tests/test_presets.py .................................................. [ 81%]
+......................                                                   [ 81%]
+tests/test_ps1_encoding.py ............                                  [ 81%]
+tests/test_registrar_path_traversal.py ................................. [ 81%]
+............................................................             [ 82%]
+tests/test_resolve_template_python_parity.py ........................... [ 82%]
+...................................                                      [ 82%]
+tests/test_security_workflow.py ...............                          [ 82%]
+tests/test_setup_plan_feature_json.py ....ss                             [ 82%]
+tests/test_setup_plan_no_overwrite.py ....ssss                           [ 82%]
+tests/test_setup_plan_python_parity.py .....s......ssssssss..            [ 83%]
+tests/test_setup_tasks.py ..................sssssssssss.s                [ 83%]
+tests/test_setup_tasks_python_parity.py .........s.sssssss.              [ 83%]
+tests/test_shared_infra_gitignore.py ....                                [ 83%]
+tests/test_shared_infra_integrity.py ........                            [ 83%]
+tests/test_shared_infra_lock.py .......                                  [ 83%]
+tests/test_skill_placeholder_py.py ......                                [ 83%]
+tests/test_specify_no_persist.py ...s..s.                                [ 83%]
+tests/test_specify_template_numbering.py ..                              [ 83%]
+tests/test_tasks_template_constraints.py .                               [ 83%]
+tests/test_timestamp_branches.py ............sssss....s............ss... [ 84%]
+...........sssss..ss.....ssss....ss..........                            [ 84%]
+tests/test_utils.py .                                                    [ 84%]
+tests/test_utils_assets_imports.py ...                                   [ 84%]
+tests/test_workflow_step_submission.py ................................. [ 84%]
+........................................................................ [ 85%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+..........................                                               [ 86%]
+tests/test_workflows.py ................................................ [ 87%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 93%]
+...............................                                          [ 93%]
+tests/unit/test_condition_expression_block.py .......................... [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 96%]
+................................                                         [ 96%]
+tests/unit/test_expression_package_boundary.py ...                       [ 96%]
+tests/workflows/test_bundled_bugfix_assess_workflows.py ......           [ 96%]
+tests/workflows/test_bundled_speckit_workflow.py ..                      [ 96%]
+tests/workflows/test_composition_execution.py .......................... [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 98%]
+...............                                                          [ 98%]
+tests/workflows/test_overlay_composer.py ....                            [ 98%]
+tests/workflows/test_overlay_layer_sources.py .......................... [ 98%]
+...........................                                              [ 98%]
+tests/workflows/test_overlay_merge.py .................................. [ 99%]
+..............                                                           [ 99%]
+tests/workflows/test_overlay_schema.py ................................. [ 99%]
+....                                                                     [ 99%]
+tests/workflows/test_resolver_integration.py ........................    [ 99%]
+tests/workflows/test_slot_step.py .............                          [100%]
+
+=============================== warnings summary ===============================
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_creates_markdown_files
+  <repo>/tests/integrations/test_integration_bob.py:321: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    created = bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_no_skills_dir
+  <repo>/tests/integrations/test_integration_bob.py:340: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_templates_are_processed
+  <repo>/tests/integrations/test_integration_bob.py:347: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_all_files_tracked
+  <repo>/tests/integrations/test_integration_bob.py:360: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    created = bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_uninstall_roundtrip
+  <repo>/src/specify_cli/integrations/base.py:1081: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    return self.setup(project_root, manifest, parsed_options=parsed_options, **opts)
+
+tests/integrations/test_integration_bob.py::TestBobInitFlowLegacy::test_init_legacy_creates_commands
+tests/integrations/test_integration_bob.py::TestBobInitFlowLegacy::test_init_legacy_does_not_set_ai_skills
+tests/integrations/test_integration_bob.py::TestBobUseFlowPreservesLegacyLayout::test_use_force_keeps_legacy_command_refs_in_shared_templates
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_skills_migration_preserves_manifest
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_reconciles_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_layout_change_preserves_extension_artifacts_when_reregistration_fails
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_active_layout_change_rejected_before_missing_preset_source_can_lose_override
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_active_layout_change_rejected_with_disabled_preset
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_rejected_when_preset_registry_unreadable
+  <repo>/src/specify_cli/command_init.py:708: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    resolved_integration.setup(
+
+tests/integrations/test_integration_kilocode.py::TestKilocodeIntegration::test_legacy_dir_extension_registration
+  <repo>/src/specify_cli/integrations/_registration.py:22: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    return handler(*args, **kwargs)
+
+tests/integrations/test_integration_kilocode.py::TestKilocodeIntegration::test_legacy_dir_extension_unregister
+  <repo>/tests/integrations/test_integration_kilocode.py:56: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    registrar.unregister_commands({"kilocode": ["speckit.myext"]}, tmp_path)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_valid_github_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:91: UserWarning: /tmp/pytest-of-markus/pytest-136/test_valid_github_config0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_valid_github_config0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_padded_token_env_is_normalized_and_resolves
+  <repo>/tests/specify_cli/authentication/test_authentication.py:111: UserWarning: /tmp/pytest-of-markus/pytest-136/test_padded_token_env_is_norma0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_padded_token_env_is_norma0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_valid_ado_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:128: UserWarning: /tmp/pytest-of-markus/pytest-136/test_valid_ado_config0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_valid_ado_config0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_valid_bitbucket_bearer_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:143: UserWarning: /tmp/pytest-of-markus/pytest-136/test_valid_bitbucket_bearer_co0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_valid_bitbucket_bearer_co0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_valid_bitbucket_basic_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:160: UserWarning: /tmp/pytest-of-markus/pytest-136/test_valid_bitbucket_basic_con0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_valid_bitbucket_basic_con0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_basic_without_username_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:189: UserWarning: /tmp/pytest-of-markus/pytest-136/test_basic_without_username_ra0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_basic_without_username_ra0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_basic_without_token_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:202: UserWarning: /tmp/pytest-of-markus/pytest-136/test_basic_without_token_raise0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_basic_without_token_raise0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_username_with_colon_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:218: UserWarning: /tmp/pytest-of-markus/pytest-136/test_username_with_colon_raise0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_username_with_colon_raise0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_invalid_username_raises[]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:233: UserWarning: /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises__0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises__0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_invalid_username_raises[   ]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:233: UserWarning: /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises__1/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises__1/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_invalid_username_raises[42]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:233: UserWarning: /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises_40/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises_40/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_invalid_username_raises[False]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:233: UserWarning: /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises_F0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_invalid_username_raises_F0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_inline_token
+  <repo>/tests/specify_cli/authentication/test_authentication.py:245: UserWarning: /tmp/pytest-of-markus/pytest-136/test_inline_token0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_inline_token0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_azure_ad_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:260: UserWarning: /tmp/pytest-of-markus/pytest-136/test_azure_ad_config0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_azure_ad_config0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_padded_azure_ad_refs_are_normalized
+  <repo>/tests/specify_cli/authentication/test_authentication.py:279: UserWarning: /tmp/pytest-of-markus/pytest-136/test_padded_azure_ad_refs_are_0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_padded_azure_ad_refs_are_0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_azure_cli_config
+  <repo>/tests/specify_cli/authentication/test_authentication.py:293: UserWarning: /tmp/pytest-of-markus/pytest-136/test_azure_cli_config0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_azure_cli_config0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_multiple_entries
+  <repo>/tests/specify_cli/authentication/test_authentication.py:304: UserWarning: /tmp/pytest-of-markus/pytest-136/test_multiple_entries0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_multiple_entries0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_invalid_json_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:313: UserWarning: /tmp/pytest-of-markus/pytest-136/test_invalid_json_raises0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_invalid_json_raises0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_not_object_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:319: UserWarning: /tmp/pytest-of-markus/pytest-136/test_not_object_raises0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_not_object_raises0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_missing_providers_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:325: UserWarning: /tmp/pytest-of-markus/pytest-136/test_missing_providers_raises0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_missing_providers_raises0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_empty_hosts_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:333: UserWarning: /tmp/pytest-of-markus/pytest-136/test_empty_hosts_raises0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_empty_hosts_raises0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_missing_provider_key_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:341: UserWarning: /tmp/pytest-of-markus/pytest-136/test_missing_provider_key_rais0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_missing_provider_key_rais0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_unsupported_auth_scheme_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:349: UserWarning: /tmp/pytest-of-markus/pytest-136/test_unsupported_auth_scheme_r0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_unsupported_auth_scheme_r0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_bearer_without_token_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:357: UserWarning: /tmp/pytest-of-markus/pytest-136/test_bearer_without_token_rais0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_bearer_without_token_rais0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_azure_ad_missing_fields_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:370: UserWarning: /tmp/pytest-of-markus/pytest-136/test_azure_ad_missing_fields_r0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_azure_ad_missing_fields_r0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_unknown_provider_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:378: UserWarning: /tmp/pytest-of-markus/pytest-136/test_unknown_provider_raises0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_unknown_provider_raises0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_incompatible_provider_scheme_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:391: UserWarning: /tmp/pytest-of-markus/pytest-136/test_incompatible_provider_sch0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_incompatible_provider_sch0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_dangerous_wildcard_host_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:399: UserWarning: /tmp/pytest-of-markus/pytest-136/test_dangerous_wildcard_host_r0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_dangerous_wildcard_host_r0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_multi_wildcard_host_raises
+  <repo>/tests/specify_cli/authentication/test_authentication.py:407: UserWarning: /tmp/pytest-of-markus/pytest-136/test_multi_wildcard_host_raise0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_multi_wildcard_host_raise0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_unsupported_glob_metacharacters_raise[gith?b.com]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:421: UserWarning: /tmp/pytest-of-markus/pytest-136/test_unsupported_glob_metachar0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_unsupported_glob_metachar0/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_unsupported_glob_metacharacters_raise[[a-z].example.com]
+  <repo>/tests/specify_cli/authentication/test_authentication.py:421: UserWarning: /tmp/pytest-of-markus/pytest-136/test_unsupported_glob_metachar1/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_unsupported_glob_metachar1/auth.json
+    load_auth_config(cfg)
+
+tests/specify_cli/authentication/test_authentication.py::TestLoadAuthConfig::test_valid_star_dot_host_accepted
+  <repo>/tests/specify_cli/authentication/test_authentication.py:428: UserWarning: /tmp/pytest-of-markus/pytest-136/test_valid_star_dot_host_accep0/auth.json is readable by group/others. Consider restricting with: chmod 600 /tmp/pytest-of-markus/pytest-136/test_valid_star_dot_host_accep0/auth.json
+    entries = load_auth_config(cfg)
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[408]
+  <repo>/tests/specify_cli/bundles/test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 408 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[429]
+  <repo>/tests/specify_cli/bundles/test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 429 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[500]
+  <repo>/tests/specify_cli/bundles/test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 500 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transport_errors
+  <repo>/tests/specify_cli/bundles/test_adapters.py:387: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: network unreachable); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_incomplete_read
+  <repo>/tests/specify_cli/bundles/test_adapters.py:476: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: incomplete read (IncompleteRead(7 bytes read))); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_reconciles_kilocode_legacy_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_preserves_disabled_kilocode_legacy_extension_and_user_file
+  <repo>/src/specify_cli/extensions/__init__.py:4468: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    return self._registrar.register_commands_for_all_agents(
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_reconciles_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_layout_change_rejected_with_presets_installed
+  <repo>/src/specify_cli/integrations/command_upgrade.py:235: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    integration.setup(
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_layout_change_rejected_with_presets_installed
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_bob_layout_change_preserves_active_agent_skills
+  <repo>/src/specify_cli/integrations/command_install.py:144: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    integration.setup(
+
+tests/specify_cli/presets/test_manager_commands.py::TestPresetSkills::test_uncomposable_wrap_command_skips_skill_in_skills_mode
+  <repo>/src/specify_cli/presets/_manager.py:484: UserWarning: Cannot compose command 'speckit.git.feature': no base layer. Stale command files may remain.
+    self._reconcile_composed_commands(cmd_names)
+
+tests/specify_cli/presets/test_manager_commands.py::TestPresetSkills::test_composed_none_unregister_respects_active_agent
+  <repo>/src/specify_cli/presets/_manager.py:906: UserWarning: Cannot compose command 'speckit.fake-compose-test': no base layer. Stale command files may remain.
+    self._reconcile_composed_commands(
+
+tests/specify_cli/presets/test_manager_skills.py::TestPresetSkills::test_remove_cleans_native_skill_missing_from_partial_skill_map
+  <repo>/tests/specify_cli/presets/test_manager_skills.py:1465: UserWarning: Post-rescaffold reconciliation failed for 'codex': simulated skills phase failure. Agent command files may be stale; re-run 'specify integration use codex' or reinstall affected presets to refresh.
+    manager.register_enabled_presets_for_agent("codex")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========= 11427 passed, 264 skipped, 62 warnings in 847.31s (0:14:07) ==========

@@ -69,6 +69,9 @@ class OwnedMetrics:
     owned_sloc: int = 0
     cognitive_sum: int | None = None
     cognitive_max: int | None = None
+    cyclomatic_sum: int | None = None
+    cyclomatic_max: int | None = None
+    cyclomatic_rank: str | None = None
     helpers: list[str] = field(default_factory=list)
 
 
@@ -169,6 +172,19 @@ def _cognitive_by_name(path: Path) -> dict[str, int]:
     for function in file_complexity(str(path), no_ignore=True).functions:
         top = function.name.split("::")[0]
         scores[top] = scores.get(top, 0) + function.complexity
+    return scores
+
+
+def _cyclomatic_by_name(path: Path) -> dict[str, int]:
+    """Cyclomatic complexity per top-level name (methods folded into their class)."""
+    try:
+        from radon.complexity import cc_visit
+    except ImportError:
+        return {}
+    scores: dict[str, int] = {}
+    for block in cc_visit(path.read_text(encoding="utf-8")):
+        top = block.name.split(".")[0]
+        scores[top] = scores.get(top, 0) + block.complexity
     return scores
 
 
@@ -279,21 +295,34 @@ def measure_owned() -> list[OwnedMetrics]:
         path = _PACKAGE / module
         sloc, _ = _sloc_by_name(path)
         cognitive = _cognitive(path) or {}
+        cyclomatic = _cyclomatic(path) or {}
         entry = OwnedMetrics(
             module=module,
             engine_sloc=sloc,
             cognitive_sum=cognitive.get("sum"),
             cognitive_max=cognitive.get("max"),
+            cyclomatic_sum=cyclomatic.get("sum"),
+            cyclomatic_max=cyclomatic.get("max"),
         )
         for helper_module, name in extra:
             helper_path = _PACKAGE / helper_module
             _, per_name = _sloc_by_name(helper_path)
             score = _cognitive_by_name(helper_path).get(name, 0)
+            cc_score = _cyclomatic_by_name(helper_path).get(name, 0)
             entry.helpers.append(f"{helper_module}:{name}")
             entry.helper_sloc += per_name[name]
             if entry.cognitive_sum is not None:
                 entry.cognitive_sum += score
                 entry.cognitive_max = max(entry.cognitive_max or 0, score)
+            if entry.cyclomatic_sum is not None:
+                entry.cyclomatic_sum += cc_score
+                entry.cyclomatic_max = max(entry.cyclomatic_max or 0, cc_score)
+        if entry.cyclomatic_max is not None:
+            try:
+                from radon.complexity import cc_rank
+                entry.cyclomatic_rank = cc_rank(entry.cyclomatic_max)
+            except ImportError:
+                entry.cyclomatic_rank = None
         entry.owned_sloc = entry.engine_sloc + entry.helper_sloc
         result.append(entry)
     return result
@@ -361,15 +390,17 @@ def write_section(files: list[FileMetrics], owned: list[OwnedMetrics] | None = N
             "the current engine.",
             "",
             "| Engine | engine SLOC | exclusive helpers | helper SLOC | owned SLOC | "
-            "cognitive sum | cognitive max |",
-            "|---|---|---|---|---|---|---|",
+            "cognitive sum | cognitive max | cyclomatic sum | cyclomatic max (rank) |",
+            "|---|---|---|---|---|---|---|---|---|",
         ]
         for entry in owned:
             helpers = ", ".join(f"`{h}`" for h in entry.helpers) or "-"
+            rank = f" ({entry.cyclomatic_rank})" if entry.cyclomatic_rank else ""
             lines.append(
                 f"| `{entry.module}` | {entry.engine_sloc} | {helpers} | "
                 f"{entry.helper_sloc} | **{entry.owned_sloc}** | "
-                f"{_cell(entry.cognitive_sum)} | {_cell(entry.cognitive_max)} |"
+                f"{_cell(entry.cognitive_sum)} | {_cell(entry.cognitive_max)} | "
+                f"{_cell(entry.cyclomatic_sum)} | {_cell(entry.cyclomatic_max)}{rank} |"
             )
         lines.append("")
     lines += [

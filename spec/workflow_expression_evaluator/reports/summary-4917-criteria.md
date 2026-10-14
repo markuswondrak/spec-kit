@@ -138,6 +138,7 @@ parser library.
 | Engine-owned SLOC | 313 | 295 | **334 (+7 %)** | 305 | 184 | 198 |
 | Cognitive complexity Σ | 166 | 87 | **110 (−34 %)** | 87 | 55 | 74 |
 | Hardest function (cognitive) | 70 | 36 | **31 (−56 %)** | 36 | 14 | 33 |
+| Hardest function (cyclomatic, rank) | 38 (E) | 24 (D) | **20 (C)** | 24 (D) | 6 (B) | 8 (B) |
 | Worst cyclomatic rank | E | D | **C** | D | B | B |
 | Grammar | — | 47 lines | **37 lines** | 104 lines (Python) | — | — |
 | Runtime vs current | 1× | 25–30× (Earley) | **1.3–1.6×** | 9–10× | n/a ² | n/a ² |

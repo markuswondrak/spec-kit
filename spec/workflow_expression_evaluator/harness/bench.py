@@ -41,6 +41,7 @@ _NAMESPACE: dict[str, Any] = {
 }
 
 _ROUNDS = 300
+_REPETITIONS = 5
 
 
 @dataclass
@@ -56,12 +57,16 @@ def _time(evaluate: Callable[[str, dict[str, Any]], Any]) -> tuple[float, float]
     start = time.perf_counter()
     evaluate(_EXPRESSIONS[0], _NAMESPACE)
     first = (time.perf_counter() - start) * 1000
-    start = time.perf_counter()
-    for _ in range(_ROUNDS):
-        for expression in _EXPRESSIONS:
-            evaluate(expression, _NAMESPACE)
-    per = (time.perf_counter() - start) / (_ROUNDS * len(_EXPRESSIONS)) * 1e6
-    return per, first
+    passes: list[float] = []
+    for _ in range(_REPETITIONS):
+        start = time.perf_counter()
+        for _ in range(_ROUNDS):
+            for expression in _EXPRESSIONS:
+                evaluate(expression, _NAMESPACE)
+        passes.append(
+            (time.perf_counter() - start) / (_ROUNDS * len(_EXPRESSIONS)) * 1e6
+        )
+    return sorted(passes)[len(passes) // 2], first
 
 
 def _bench_engine(name: str) -> BenchResult:
@@ -117,9 +122,10 @@ def write_bench_section(results: list[BenchResult]) -> list[str]:
     lines = [
         "## Runtime (indicative)",
         "",
-        f"`_evaluate_template` over {len(_EXPRESSIONS)} expressions x {_ROUNDS} rounds "
-        "(harness/bench.py). `n/a` = the engine rejects one of the expressions, so it "
-        "is not timed on a smaller set. Machine-dependent; compare the ratio.",
+        f"`_evaluate_template` over {len(_EXPRESSIONS)} expressions x {_ROUNDS} rounds, "
+        f"median of {_REPETITIONS} passes (harness/bench.py). `n/a` = the engine rejects "
+        "one of the expressions, so it is not timed on a smaller set. Machine-dependent "
+        "and load-sensitive; compare the ratio, not the microseconds.",
         "",
         "| Engine | per expression | x current | first call | corpus | note |",
         "|---|---|---|---|---|---|",

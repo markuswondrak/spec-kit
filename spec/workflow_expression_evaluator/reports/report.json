@@ -4842,6 +4842,9 @@
       "owned_sloc": 313,
       "cognitive_sum": 166,
       "cognitive_max": 70,
+      "cyclomatic_sum": 115,
+      "cyclomatic_max": 38,
+      "cyclomatic_rank": "E",
       "helpers": [
         "template.py:_split_top_level_commas",
         "template.py:_is_single_list_literal",
@@ -4855,6 +4858,9 @@
       "owned_sloc": 295,
       "cognitive_sum": 87,
       "cognitive_max": 36,
+      "cyclomatic_sum": 95,
+      "cyclomatic_max": 24,
+      "cyclomatic_rank": "D",
       "helpers": []
     },
     {
@@ -4864,6 +4870,9 @@
       "owned_sloc": 334,
       "cognitive_sum": 110,
       "cognitive_max": 31,
+      "cyclomatic_sum": 113,
+      "cyclomatic_max": 20,
+      "cyclomatic_rank": "C",
       "helpers": []
     },
     {
@@ -4873,6 +4882,9 @@
       "owned_sloc": 184,
       "cognitive_sum": 55,
       "cognitive_max": 14,
+      "cyclomatic_sum": 43,
+      "cyclomatic_max": 6,
+      "cyclomatic_rank": "B",
       "helpers": []
     },
     {
@@ -4882,6 +4894,9 @@
       "owned_sloc": 305,
       "cognitive_sum": 87,
       "cognitive_max": 36,
+      "cyclomatic_sum": 74,
+      "cyclomatic_max": 24,
+      "cyclomatic_rank": "D",
       "helpers": []
     },
     {
@@ -4891,35 +4906,38 @@
       "owned_sloc": 198,
       "cognitive_sum": 74,
       "cognitive_max": 33,
+      "cyclomatic_sum": 42,
+      "cyclomatic_max": 8,
+      "cyclomatic_rank": "B",
       "helpers": []
     }
   ],
   "runtime": [
     {
       "engine": "engine_current",
-      "per_expression_us": 117.19639721882736,
-      "first_call_ms": 0.0998319883365184,
+      "per_expression_us": 97.52604554200339,
+      "first_call_ms": 0.18552198889665306,
       "note": "",
       "corpus": ""
     },
     {
       "engine": "engine_lark",
-      "per_expression_us": 3480.205392228931,
-      "first_call_ms": 2.008057024795562,
+      "per_expression_us": 2827.1612022136756,
+      "first_call_ms": 2.4589979730080813,
       "note": "",
       "corpus": ""
     },
     {
       "engine": "engine_lark_a2",
-      "per_expression_us": 193.00996778636343,
-      "first_call_ms": 0.24666497483849525,
+      "per_expression_us": 121.9372394391232,
+      "first_call_ms": 0.13439200120046735,
       "note": "",
       "corpus": ""
     },
     {
       "engine": "engine_pyparsing",
-      "per_expression_us": 1114.2094961057107,
-      "first_call_ms": 1.0406369983684272,
+      "per_expression_us": 1037.7754127774904,
+      "first_call_ms": 0.587830989388749,
       "note": "",
       "corpus": ""
     },
@@ -4939,8 +4957,8 @@
     },
     {
       "engine": "engine_lark (LALR probe)",
-      "per_expression_us": 105.05389278275995,
-      "first_call_ms": 1.3541570224333555,
+      "per_expression_us": 127.39208001423525,
+      "first_call_ms": 1.594483997905627,
       "note": "parser='lalr' + keyword priority .2; `not in inputs.a` rejected (as current)",
       "corpus": "94/96 (diverging: err.ambiguous-precedence, err.filter-after-not)"
     }

@@ -21,14 +21,14 @@ Per source file, measured with `complexipy` (cognitive complexity) and `radon` (
 
 Everything that is added or deleted together with one engine: the engine module plus shared-module helpers that only this engine uses (no other engine, no shared module, no sibling definition). SLOC excludes blank lines, comment-only lines and docstrings. The per-file table below does not see the helpers, so it understates the current engine.
 
-| Engine | engine SLOC | exclusive helpers | helper SLOC | owned SLOC | cognitive sum | cognitive max |
-|---|---|---|---|---|---|---|
-| `engine_current.py` | 249 | `template.py:_split_top_level_commas`, `template.py:_is_single_list_literal`, `template.py:_is_wrapped_in_parens` | 64 | **313** | 166 | 70 |
-| `engine_lark.py` | 295 | - | 0 | **295** | 87 | 36 |
-| `engine_lark_a2.py` | 334 | - | 0 | **334** | 110 | 31 |
-| `engine_jinja2.py` | 184 | - | 0 | **184** | 55 | 14 |
-| `engine_pyparsing.py` | 305 | - | 0 | **305** | 87 | 36 |
-| `engine_liquid.py` | 198 | - | 0 | **198** | 74 | 33 |
+| Engine | engine SLOC | exclusive helpers | helper SLOC | owned SLOC | cognitive sum | cognitive max | cyclomatic sum | cyclomatic max (rank) |
+|---|---|---|---|---|---|---|---|---|
+| `engine_current.py` | 249 | `template.py:_split_top_level_commas`, `template.py:_is_single_list_literal`, `template.py:_is_wrapped_in_parens` | 64 | **313** | 166 | 70 | 115 | 38 (E) |
+| `engine_lark.py` | 295 | - | 0 | **295** | 87 | 36 | 95 | 24 (D) |
+| `engine_lark_a2.py` | 334 | - | 0 | **334** | 110 | 31 | 113 | 20 (C) |
+| `engine_jinja2.py` | 184 | - | 0 | **184** | 55 | 14 | 43 | 6 (B) |
+| `engine_pyparsing.py` | 305 | - | 0 | **305** | 87 | 36 | 74 | 24 (D) |
+| `engine_liquid.py` | 198 | - | 0 | **198** | 74 | 33 | 42 | 8 (B) |
 
 ### Candidate engines (per file)
 
@@ -57,17 +57,17 @@ Everything that is added or deleted together with one engine: the engine module 
 
 ## Runtime (indicative)
 
-`_evaluate_template` over 6 expressions x 300 rounds (harness/bench.py). `n/a` = the engine rejects one of the expressions, so it is not timed on a smaller set. Machine-dependent; compare the ratio.
+`_evaluate_template` over 6 expressions x 300 rounds, median of 5 passes (harness/bench.py). `n/a` = the engine rejects one of the expressions, so it is not timed on a smaller set. Machine-dependent and load-sensitive; compare the ratio, not the microseconds.
 
 | Engine | per expression | x current | first call | corpus | note |
 |---|---|---|---|---|---|
-| `engine_current` | 117 us | 1.0x | 0.1 ms | - |  |
-| `engine_lark` | 3480 us | 29.7x | 2.0 ms | - |  |
-| `engine_lark_a2` | 193 us | 1.6x | 0.2 ms | - |  |
-| `engine_pyparsing` | 1114 us | 9.5x | 1.0 ms | - |  |
+| `engine_current` | 98 us | 1.0x | 0.2 ms | - |  |
+| `engine_lark` | 2827 us | 29.0x | 2.5 ms | - |  |
+| `engine_lark_a2` | 122 us | 1.3x | 0.1 ms | - |  |
+| `engine_pyparsing` | 1038 us | 10.6x | 0.6 ms | - |  |
 | `engine_jinja2` | - | - | - | - | n/a: '{{ steps.run-tests.output.exit_code == 0 }}' raises ValueError |
 | `engine_liquid` | - | - | - | - | n/a: "{{ inputs.tags \| join(', ') }}" raises ValueError |
-| `engine_lark (LALR probe)` | 105 us | 0.9x | 1.4 ms | 94/96 (diverging: err.ambiguous-precedence, err.filter-after-not) | parser='lalr' + keyword priority .2; `not in inputs.a` rejected (as current) |
+| `engine_lark (LALR probe)` | 127 us | 1.3x | 1.6 ms | 94/96 (diverging: err.ambiguous-precedence, err.filter-after-not) | parser='lalr' + keyword priority .2; `not in inputs.a` rejected (as current) |
 
 ## lark: divergences
 
